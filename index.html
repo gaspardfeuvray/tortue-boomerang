@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧶 Ateliers Tissu 🧶</title>
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+    <style>
+        body {
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            color: #000080;
+            background-image: url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/wall4.png');
+            padding: 1rem;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .title {
+            font-size: 3rem;
+            text-shadow: 2px 2px #ff69b4;
+            color: purple;
+            text-align: center;
+        }
+
+        .yarn-ball {
+            animation: bounce 2s infinite ease-in-out;
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Retro styles */
+        .content-box {
+            border: 3px solid #9400D3;
+            background: #FFE4E1;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        a {
+            color: #0000EE;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: #551A8B;
+        }
+
+        .event-list {
+            font-family: "Courier New", monospace;
+            border: 2px dashed #FF69B4;
+            padding: 10px;
+        }
+
+        marquee {
+            background: yellow;
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Image sizing */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .small-gif {
+            width: auto;
+            height: 30px;
+        }
+
+        .medium-gif {
+            width: auto;
+            height: 50px;
+        }
+
+        .banner-gif {
+            width: auto;
+            height: 140px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Email form styling */
+        .email-form {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        input[type="email"] {
+            padding: 5px;
+            border: 2px inset #ccc;
+            background: white;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Retro button styling */
+        .retro-button {
+            font-family: Arial, sans-serif;
+            padding: 3px 8px;
+            background: #c0c0c0;
+            border: 2px outset #fff;
+            box-shadow: 2px 2px 0px #666;
+            color: black;
+            cursor: pointer;
+        }
+
+        .retro-button:active {
+            border-style: inset;
+            box-shadow: 1px 1px 0px #666;
+            transform: translateY(1px);
+        }
+
+        /* Center elements */
+        .text-center {
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 2rem;
+        }
+
+        footer {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <marquee>✨ Prochain atelier vendredi 15 à l'espace Neomartine! ✨</marquee>
+    
+    <div class="container">
+        <!-- En-tête -->
+        <header>
+            <h1 class="title">Mes Ateliers Tissu</h1>
+            <div class="yarn-ball">🧶</div>
+        </header>
+
+        <!-- Section À propos -->
+        <div class="content-box">
+            <h2>✨ À propos de moi ✨</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                <img src="https://web.archive.org/web/20091027130429/http://hk.geocities.com/mhchan1/new.gif" 
+                     alt="New" 
+                     class="small-gif">
+            </p>
+        </div>
+
+        <!-- Mailing List -->
+        <div class="content-box">
+            <h2>📫 Rejoignez notre newsletter! 📫</h2>
+            <div class="email-form">
+                <input type="email" id="emailInput" placeholder="votre@email.com">
+                <button class="retro-button" onclick="subscribeEmail()">Envoyer</button>
+            </div>
+        </div>
+
+        <!-- Événements -->
+        <div class="content-box">
+            <h2>📅 Prochains Ateliers 📅</h2>
+            <div class="event-list">
+                <table>
+                    <tr>
+                        <td>15/03/2024</td>
+                        <td>14h-17h</td>
+                        <td>Initiation Tricot</td>
+                        <td>Café des Arts</td>
+                    </tr>
+                    <tr>
+                        <td>22/03/2024</td>
+                        <td>10h-12h</td>
+                        <td>Crochet Avancé</td>
+                        <td>Bibliothèque</td>
+                    </tr>
+                    <tr>
+                        <td>29/03/2024</td>
+                        <td>15h-18h</td>
+                        <td>Broderie</td>
+                        <td>Jardin Public</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            <img src="https://media.giphy.com/media/3oriO6qJiXajN0TyDu/giphy.gif?cid=790b76116nle6864iq61dhw43evo0qx0unl0t1lat0zt9ae7&ep=v1_gifs_search&rid=giphy.gif&ct=g" 
+                 alt="Rainbow Line" 
+                 class="banner-gif">
+            <p>© 2025 Ateliers Tissu</p>
+        </footer>
+    </div>
+
+    <script>
+        function subscribeEmail() {
+            const email = document.getElementById('emailInput').value;
+            if(email) {
+                window.location.href = `mailto:marcelle.piguet@textile.com?subject=Ajoute ${email} à la mailing list&body=Je souhaite rejoindre la mailing list: ${email}`;
+            }
+        }
+    </script>
+</body>
+</html>
